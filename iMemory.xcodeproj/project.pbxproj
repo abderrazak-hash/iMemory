@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC144DCC2AC7595A009A187B /* iMemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC144DCB2AC7595A009A187B /* iMemoryApp.swift */; };
-		CC144DCE2AC7595A009A187B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC144DCD2AC7595A009A187B /* ContentView.swift */; };
+		CC144DCE2AC7595A009A187B /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC144DCD2AC7595A009A187B /* MemoryView.swift */; };
 		CC144DD02AC7595C009A187B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC144DCF2AC7595C009A187B /* Assets.xcassets */; };
 		CC144DD32AC7595C009A187B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC144DD22AC7595C009A187B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		CC144DC82AC7595A009A187B /* iMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC144DCB2AC7595A009A187B /* iMemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMemoryApp.swift; sourceTree = "<group>"; };
-		CC144DCD2AC7595A009A187B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC144DCD2AC7595A009A187B /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
 		CC144DCF2AC7595C009A187B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC144DD22AC7595C009A187B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				CC144DCB2AC7595A009A187B /* iMemoryApp.swift */,
-				CC144DCD2AC7595A009A187B /* ContentView.swift */,
+				CC144DCD2AC7595A009A187B /* MemoryView.swift */,
 				CC144DCF2AC7595C009A187B /* Assets.xcassets */,
 				CC144DD12AC7595C009A187B /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC144DCE2AC7595A009A187B /* ContentView.swift in Sources */,
+				CC144DCE2AC7595A009A187B /* MemoryView.swift in Sources */,
 				CC144DCC2AC7595A009A187B /* iMemoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
