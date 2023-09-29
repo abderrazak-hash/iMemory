@@ -10,10 +10,10 @@ import SwiftUI
 struct MemoryView: View {
     var body: some View {
         HStack {
-            CardView(isFaceUp: true)
-            CardView(isFaceUp: false)
-            CardView(isFaceUp: false)
-            CardView(isFaceUp: true)
+            let emojis: Array<String> = [ "⚽️", "🏀",  "🥎", "🏈"]
+            ForEach(0..<emojis.count, id: \.self) { index in
+                CardView(content: emojis[index], isFaceUp: true)
+            }
         }
         .foregroundColor(.orange)
         .padding()
@@ -21,22 +21,26 @@ struct MemoryView: View {
 }
 
 struct CardView: View {
-    var isFaceUp: Bool = false
+    let content: String
+    @State var isFaceUp = false
     
     var body: some View {
         ZStack {
             if isFaceUp {
                 RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.white)
+                    .fill(.white)
                 RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                     .fill(.white)
                     .strokeBorder(lineWidth: 2.0)
-                Text("👻")
+                Text(content)
                     .font(.largeTitle)
             } else {
                 RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.orange)
+                    .fill(.orange)
             }
+        }
+        .onTapGesture {
+            isFaceUp.toggle() // isFaceUp = !isFaceUp
         }
     }
 }
